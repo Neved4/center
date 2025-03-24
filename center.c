@@ -74,9 +74,8 @@ int main(void) {
 
 	char *buf = NULL;
 	size_t siz = 0;
-	ssize_t len;
 
-	while ((len = getline(&buf, &siz, stdin)) > 0)
+	while (getline(&buf, &siz, stdin) > 0)
 		fmtline(buf, term_width);
 
 	free(buf);
