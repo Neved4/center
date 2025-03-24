@@ -4,16 +4,17 @@
 
 # center - Centers text from stdin! 🛠️
 
-###### Originally by [Lizzy Fleckenstein][LizzyFleckenstein03/center] 🤍
-
 [`center`] reads input from `stdin`, calculates the width of each line
 (considering multibyte characters), and center-aligns the text within the
-terminal window.
+terminal window. Fully supports UTF-8.
+
+###### Originally by [Lizzy Fleckenstein][LizzyFleckenstein03/center] 🤍
+
 
 ### Highlights
 
 - **Terminal size detection**: Adjusts text to fit the terminal width.
-- **Multibyte support**: Handles Unicode characters correctly.
+- **Multibyte support**: Properly handles UTF-8 Unicode characters.
 - **Text centering**: Prints each line centered within the terminal.
 - **Error handling**: Graceful handling of system call failures.
 
