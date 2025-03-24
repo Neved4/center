@@ -1,12 +1,4 @@
-PREFIX=/usr/local
-CFLAGS=-Wall -Wextra
-
-center: center.c
-	$(CC) center.c -o center $(CFLAGS)
+CFLAGS = -Oz -std=c17 -D_DEFAULT_SOURCE -D_POSIX_C_SOURCE=202405L
 
 clean:
 	rm -f center
-
-install: center
-	mkdir -p $(PREFIX)/bin
-	cp center $(PREFIX)/bin
